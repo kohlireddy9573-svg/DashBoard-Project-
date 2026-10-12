@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50dfd7e177.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    <main> 
+        <section class="left"> 
+            <div class="profile"> 
+                <img src="man.jpg" alt="profile">
+                <p class="profile-name">Ganesh Reddy</p>
+            </div>
+            <div class="nav">
+                <i class="fa-solid fa-list"></i>
+                <a href="#dashboard">Dashboard</a>
+            </div>
+            <div class="nav">
+                <i class="fa-solid fa-database"></i>
+                <a href="#data">Data</a>
+            </div>
+            <div class="nav">
+                <i class="fa-solid fa-user"></i>
+                <a href="#users">Users</a>
+            </div>
+            <div class="nav">
+                 <i class="fa-solid fa-calendar"></i>
+                <a href="#schedule">Schedule</a>
+            </div>
+            <div class="nav">
+                   <i class="fa-regular fa-address-book"></i>
+                <a href="#contact">Contact</a>
+            </div>
+        </section>
+
+        <section class="right">
+            <header> 
+                  <h1>Dashboard</h1>
+                 <input type="text" placeholder="Search...">
+            </header>
+            <article id="dashboard">
+            
+                <div class="activity">
+                 <h3>Activities </h3>
+                 <p> May-June 2024 </p>
+                </div>
+                <div >
+                 <img src="BarGraph.png" alt="profile">
+                </div>
+            
+            </article>
+
+
+ <article id="data">
+
+    <div class="data-header">
+        <h1>DASHBOARD DATA</h1>
+    </div>
+
+    <div class="card-container">
+
+        <!-- Card 1 -->
+        <div class="card card1">
+            <i class="fa-solid fa-dollar-sign card-icon"></i>
+
+            <div class="card-content">
+                <p>Total Revenue</p>
+                <h2>$10,000</h2>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card2">
+            <i class="fa-solid fa-money-bill-transfer card-icon"></i>
+
+            <div class="card-content">
+                <p>Total Transactions</p>
+                <h2>7,500</h2>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card3">
+            <i class="fa-solid fa-heart card-icon"></i>
+
+            <div class="card-content">
+                <p>Total Likes</p>
+                <h2>2,000</h2>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card card4">
+            <i class="fa-solid fa-users card-icon"></i>
+
+            <div class="card-content">
+                <p>Total Users</p>
+                <h2>5,000</h2>
+            </div>
+        </div>
+
+    </div>
+
+</article>
+
+
+            <article id="users">
+                
+
+                <div class="table-header">
+                    <h1>User Interactions</h1>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Number of Users</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>January</td>
+                                <td>1,000</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>1,200</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td>1,500</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td>1,800</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td>2,000</td>
+                        </tbody>
+                    </table>
+                </div>
+             
+            </article>   
+            
+            
+
+       <article id="schedule">
+
+    <div class="schedule-header">
+        <h2>Today's Schedule</h2>
+        <a href="#">See All</a>
+    </div>
+
+    <div class="schedule-list">
+
+        <div class="schedule-item green">
+            <h3>Meetings from suppliers from Kutta Bali</h3>
+            <p class="time">14.00 - 15.00</p>
+            <p class="location">At Sunset Road Kutta Bali</p>
+        </div>
+
+        <div class="schedule-item blue">
+            <h3>Meetings from suppliers from Suresh</h3>
+            <p class="time">15.00 - 16.00</p>
+            <p class="location">At Sunset Road Bali</p>
+        </div>
+
+        <div class="schedule-item green">
+            <h3>Meetings from suppliers from Ajay</h3>
+            <p class="time">12.00 - 13.00</p>
+            <p class="location">At Sunset Road</p>
+        </div>
+
+        <div class="schedule-item blue">
+            <h3>Meetings from suppliers from Encoprice</h3>
+            <p class="time">14.00 - 15.00</p>
+            <p class="location">At Morning on Sohna Road</p>
+        </div>
+
+        <div class="schedule-item green">
+            <h3>Meetings from suppliers from Rahul</h3>
+            <p class="time">16.00 - 17.00</p>
+            <p class="location">At MG Road Bangalore</p>
+        </div>
+
+        <div class="schedule-item blue">
+            <h3>Meetings from suppliers from Kumar</h3>
+            <p class="time">18.00 - 19.00</p>
+            <p class="location">At Residency Road</p>
+        </div>
+
+    </div>
+
+</article>
+
+
+
+      
+            <footer id="contact">
+                
+
+    <h2>Contact Details</h2>
+
+    <div class="footer-container">
+
+        <!-- Map -->
+        <section class="map">
+
+            <iframe
+                src="https://maps.google.com/maps?q=New%20Delhi&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+        <!-- Feedback -->
+        <section class="feedback">
+
+            <h3>Feedback</h3>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Your Name">
+
+                <input
+                    type="email"
+                    placeholder="Your Email">
+
+                <textarea
+                    rows="8"
+                    placeholder="Your Feedback"></textarea>
+
+                <button type="submit">
+                    Submit Feedback
+                </button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+    <!-- Bottom Footer -->
+
+    <div class="footer-bottom">
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <p>
+            &copy; 2024 Your Company Name. All Rights Reserved.
+        </p>
+
+    </div>
+
+
+            </footer>
+        </section>
+    </main>
+</body>
+</html>

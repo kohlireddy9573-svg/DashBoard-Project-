@@ -1,0 +1,624 @@
+main{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    gap : 20px;
+    padding: 20px;
+    width: 100%;
+}
+.left{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    border-radius: 30px;
+    gap: 10px;
+    flex-direction: column;
+    height: 90vh;
+    padding: 50px;
+    margin-left: 20px;
+    
+
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin : 10px ;
+}
+.profile img{
+    display : flex;
+    width: 60%;
+    height: 75%;
+    border-radius: 50%;
+}
+.profile-name{
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 30px;
+    color: white;
+}
+.nav:hover{
+    color: rgb(236, 202, 10);
+}
+.nav>a{
+    color: white;
+    margin-left: 5px;
+text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav>a:hover{
+    color: grey;
+}
+.right{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+header>h1{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header h1{
+    margin: 0;
+}
+
+header input{
+    width: 250px;
+    height: 40px;
+    padding: 0 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: rgb(240, 240, 240);
+
+    /* Text color */
+    color: grey;
+
+    /* Font */
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+header input::placeholder{
+    color: grey;
+
+
+}
+
+header input:focus{
+    outline: none;
+    border: 2px solid rgb(5, 233, 74);
+    background-color: #fff;
+    color: grey;
+}
+
+
+#dashboard{
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(223, 241, 241);
+    flex-direction: column;
+    border-radius: 10px;
+    width:82%;
+    padding: 20px;
+}
+#dashboard> .activity{
+    margin-left: 20px;
+    gap: 20px;
+}
+#dashboard  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Dashboard Section */
+
+#data{
+    display: flex;
+    width: 85%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: rgb(223, 241, 241);
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.data-header {
+    display:flex;
+    justify-content: center;
+    text-decoration: underline;
+    
+
+   
+
+}
+
+/* Card Container */
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Common Card */
+
+.card{
+    flex: 1;
+    height: 180px;
+    padding: 25px;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #fff;
+    transition: all .4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+/* Top Right Icon */
+
+.card-icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.20);
+
+    transition: .6s ease;
+}
+
+/* Card Content */
+
+.card-content{
+    margin-top: 70px;
+}
+
+.card-content p{
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: .5px;
+    opacity: .95;
+}
+
+.card-content h2{
+    margin-top: 10px;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+/* Individual Card Colors */
+
+.card1{
+    background: linear-gradient(135deg,#16a34a,#15803d);
+}
+
+.card2{
+    background: linear-gradient(135deg,#2563eb,#1d4ed8);
+}
+
+.card3{
+    background: linear-gradient(135deg,#ec4899,#be185d);
+}
+
+.card4{
+    background: linear-gradient(135deg,#f59e0b,#ea580c);
+}
+
+/* ========================= */
+/* Different Hover Effects */
+/* ========================= */
+
+/* Card 1 */
+.card1:hover{
+    transform: translateY(-12px);
+}
+
+/* Card 2 */
+.card2:hover{
+    transform: scale(1.08);
+}
+
+/* Card 3 */
+.card3:hover{
+    transform: rotate(-4deg);
+}
+
+/* Card 4 */
+.card4:hover{
+    transform: translateX(10px);
+}
+
+/* Common Shadow */
+
+.card:hover{
+    box-shadow: 0 20px 40px rgba(0,0,0,.30);
+}
+
+/* Icon Animation */
+
+.card:hover .card-icon{
+    transform: rotate(360deg) scale(1.2);
+    background: rgba(255,255,255,.35);
+}
+
+/* Article */
+#users{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 85%;
+    padding: 20px;
+    background:  rgb(223, 241, 241) ;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Header */
+.table-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: underline;
+    
+}
+
+.table-header h1{
+    font-size: 2rem;
+    color: #222;
+    margin: 0;
+    
+}
+
+/* Table Container */
+.table-container{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table */
+table{
+    flex: 1;
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+    align-items: center;
+}
+
+thead{
+    background: #0077ff;
+    color: white;
+}
+
+th,
+td{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+tbody tr:nth-child(even){
+    background: #f8f8f8;
+}
+
+tbody tr:hover{
+    background: #e8f2ff;
+    transition: 0.3s;
+}
+
+
+/* Schedule Card */
+
+#schedule{
+    position: relative;
+    width: 85%;
+    height: 550px;
+    background: rgb(219, 235, 235) ;
+    border-radius: 18px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+/* Header */
+
+.schedule-header{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-header h2{
+    margin: 0;
+    font-size: 2rem;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.schedule-header a{
+    text-decoration: none;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Scrollable List */
+
+.schedule-list{
+    position: absolute;
+    top: 90px;
+    left: 25px;
+    right: 10px;
+    bottom: 20px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 15px;
+}
+
+
+
+/* Schedule Item */
+
+.schedule-item{
+    border-left: 5px solid #8BC34A;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    transition: .3s;
+}
+
+.schedule-item.blue{
+    border-left-color: #5C6BC0;
+}
+
+.schedule-item.green{
+    border-left-color: #8BC34A;
+}
+
+.schedule-item:hover{
+    transform: translateX(8px);
+}
+
+/* Title */
+
+.schedule-item h3{
+    margin: 0;
+    font-size: 1.4rem;
+    color: #222;
+    text-transform: capitalize;
+}
+
+/* Time */
+
+.time{
+    margin: 10px 0 5px;
+    color: #888;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Location */
+
+.location{
+    margin: 0;
+    color: #999;
+    text-transform: uppercase;
+    font-size: .95rem;
+    letter-spacing: .5px;
+}
+
+/* =======================
+   CONTACT SECTION
+======================= */
+
+#contact{
+    width:85%;
+    background: rgb(223, 241, 241);
+    display:flex;
+    flex-direction:column;
+    margin-left: 50px;
+    border-radius:25px;
+}
+
+#contact h2{
+    text-align:center;
+    margin:30px 0;
+    font-size:2rem;
+    color:#222;
+    text-transform:uppercase;
+    text-decoration:underline;
+    
+}
+
+/* =======================
+   CONTACT CONTAINER
+======================= */
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
+    gap:30px;
+    padding:0 30px 40px;
+    flex-wrap:wrap;
+}
+
+/* =======================
+   MAP
+======================= */
+
+.map{
+    flex:1;
+    min-width:320px;
+}
+
+.map iframe{
+    width:100%;
+    height:600px;
+    border:none;
+    border-radius:25px;
+}
+
+/* =======================
+   FEEDBACK CARD
+======================= */
+
+.feedback{
+    flex:1;
+    min-width:320px;
+    background:#fff;
+    border-radius:25px;
+    padding:30px;
+    box-sizing:border-box;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.feedback h3{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:2rem;
+    color:#222;
+    text-transform:uppercase;
+    text-decoration:underline;
+}
+
+
+
+.feedback form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.feedback input,
+.feedback textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #d9d9d9;
+    border-radius:8px;
+    outline:none;
+    font-size:1rem;
+    box-sizing:border-box;
+}
+
+.feedback textarea{
+    resize:none;
+}
+
+
+
+.feedback button{
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#9BE27B;
+    color:#fff;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.feedback button:hover{
+    background:#6bc640;
+}
+
+
+
+.footer-bottom{
+    background:#000;
+    color:#fff;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:18px;
+    padding:25px;
+}
+
+
+
+.social-icons{
+    display:flex;
+    gap:30px;
+}
+
+.social-icons a{
+    color:#fff;
+    font-size:2rem;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#9BE27B;
+    transform:translateY(-5px);
+}
+
+
+
+.footer-bottom p{
+    margin:0;
+    text-align:center;
+    font-size:1rem;
+}
+
+
+
